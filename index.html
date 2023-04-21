@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/ca4a80b82c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="body">
+    <nav>
+        <li class="detail">Details de l'evenement</li>
+        <li>A Propos</li>
+        <li>Contact</li>
+        <li>Evenements passees</li>
+    </nav>
+    <div class="navbar">
+        <h1 class="logo">GameOn</h1>
+        <ul>
+            <li class="detail">Details de l'evenement</li>
+            <li>A Propos</li>
+            <li>Contact</li>
+            <li>Evenements passees</li>
+        </ul>
+        <button type="button" aria-label="toggle curtain navigation" class="nav-toggle">
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+            <span class="line l3"></span>
+        </button>
+    </div>
+    <div class="container">
+       
+
+<div class="left-content">
+            <h1 class="marathon ">Marathon national <br> de jeux videos </h1>
+            <p>Vous aimez jouer ? Notre prochain  evenement gaming est ouvert aux reservations...  Places
+                limitees !</p>
+        </div>
+        <div class="right-content">
+            <img src="images/img0.jpg" alt="">
+            </div>
+        <div class="btnc">
+            <button class="insc">Je M'inscris</button>
+        </div>
+
+    </div>
+
+    <div class="signup_body">
+        <form action="" class="signup_form">
+            <i class="fa-brands fa-xbox x"></i>
+
+            <div class="allelements">
+                        <div>
+                <label for="prenom" class="element">Prenom</label><br>
+                <input type="text" name="prenom" id="prenom" class="prenom element"><br>
+                <p class="palert element"></p>
+            </div>
+            <div>
+                <label for="nom element">Nom</label><br>
+                <input type="text" name="nom" id="nom" class="nom element"><br>
+                <p class="nalert element"></p>
+            </div>
+            <div>
+                <label for="email" class="element">Email</label><br>
+                <input type="email" name="email" id="mail" class="element"><br>
+                <p class="emailalert element"></p>
+            </div>
+            <div>
+                <label for="date" class="element">Date de naissance</label><br>
+                <input type="date" class="element" name="date" id=""><br>
+            </div>
+            <div>
+                <label for="number" class="element">A combien de tournoi GameOn avez vous participer ?</label>
+                <input type="number" name="number" id="" class="element">
+            </div>
+            <p class="element">A quel tournoi soohaitez-vous participer cette annee </p>
+            <div class="tournoi element">
+                <label>
+                    <input type="radio" name="city" value="new-york">
+                    New York
+                </label>
+                <label>
+                    <input type="radio" name="city" value="san-francisco">
+                    San Francisco
+                </label>
+                <label>
+                    <input type="radio" name="city" value="seattle">
+                    Seattle
+                </label>
+                <label>
+                    <input type="radio" name="city" value="chicago">
+                    Chicago
+                </label>
+            </div>
+            <div class="cities">
+                <br>
+                <label>
+                    <input type="radio" name="city" value="ecelton">
+                    Ecelton
+                </label>
+                <label>
+                    <input type="radio" name="city" value="portland">
+                    Portland
+                </label>
+
+            </div>
+
+            <div>
+                <label for="cd"> <input type="checkbox" name="cd" id="condition" class="check">J'ai lu et j'accepte les conditions
+                    d'utilisations</label>
+                    <p class="checkalert"></p>
+                <label for="pr"><input type="checkbox" name="pr" id="">Je souhaite etre prevenue des prochains
+                    evenements </label>
+            </div>
+            
+        </div>
+        <button class="sub">C'est Parti</button>
+            <p class="subalert"></p>
+        </form>
+    </div>
+
+    <script src="intro.js"></script>
+    <script>
+        const hamburgerButton = document.querySelector(".nav-toggle")
+const navigation = document.querySelector("nav")
+hamburgerButton.addEventListener("click", toggleNav)
+function toggleNav() {
+    hamburgerButton.classList.toggle("active")
+    navigation.classList.toggle("active")
+}
+    </script>
+</body>
+
+</html>

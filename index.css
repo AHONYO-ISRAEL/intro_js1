@@ -1,0 +1,356 @@
+@import "hamburger.css";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type : none;
+}
+
+
+.x{
+    color: #fff;
+    margin-left:  85%; 
+margin-top: -20px;
+cursor: pointer;
+}
+button{
+    background: #ff0000bd;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.navbar{
+    display : flex;
+    justify-content: space-between;
+    margin-left: 35px;
+    padding-bottom: 10px;
+}
+
+.navbar ul{
+    display: flex;
+    margin-top: 20px;
+}
+
+.navbar ul li{
+    padding: 20px;
+}
+
+.detail{
+    border: solid 1px #ff0000bd;
+    background: #ff0000bd;
+    border-radius: 8px;
+}
+
+.logo{
+    font-size: 36px;
+    color: #ff0000bd;
+    margin-top: 30px;
+}
+
+.marathon{
+    font-size: 80px;
+    color: #fff;
+    margin-left: 7vw;
+position: absolute;
+}
+.container{
+    margin-top: 30px;
+    width: 90vw;
+    margin-left: 35px;
+    height: 70vh;
+    display: flex;
+    color: white;
+}
+
+.left-content{
+    width: 40%;
+    height: 100%;
+    background: #373737a6;
+ 
+}
+
+.left-content p{
+    margin-top: 40vh;
+    font-size: 22px;
+    margin-left: 5vw;
+}
+
+
+.insc{
+    margin-top: 20px;
+    margin-left: 5vw;
+
+}
+
+.right-content{
+    width: 60%;
+    height: 100%;
+
+ 
+}
+
+.right-content  img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.signup_form{
+ margin-left: 30vw;
+ top: 0;
+background: #000000;
+    display: flex;
+ width: 25vw;
+ color: white;
+padding: 30px;
+z-index: 6;
+display: none;
+align-items: center;
+justify-content: center;
+align-content: center;
+border-radius: 10px;
+position: absolute;
+justify-content: center;
+align-content: center;
+align-items: center;
+}
+
+.signup_body{
+    width: 100vw;
+    height: 100vh;
+    background: #dadab1;
+    top: 0;
+    left: 0;
+    z-index: 3;
+display: none;
+}
+
+.signup_body.active{
+    display: block;
+    position: absolute;
+
+}
+.signup_form.active{
+display: block;
+z-index: 5;
+margin-top: 20px;
+
+}
+.body{
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+} 
+
+.signup_form div{
+    margin-top: 15px;
+}
+
+/* .success p{
+    display: none;
+
+} */
+
+
+
+
+
+
+input[type="text"], input[type="email"], input[type="number"], input[type="date"]{
+    height: 30px;
+    width: 80%;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #030303;
+}
+
+.tournoi, .cities{
+display: flex;
+}
+
+label{
+    margin-top: 10px;
+}
+
+.sub{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: 40%;
+    margin-top: 18px;
+}
+label {
+    display: flex;
+    margin-right: 10px;
+  }
+  
+  .insc{
+    height: 50px;
+   margin-left: -85vw;
+   margin-top:62vh ;
+  }
+
+  .success{
+    height: 70vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .successtext{
+    position: absolute;
+    font-size: 30px;
+    color: #ffffffb9;
+    top: 50%;
+  }
+
+  .submit2{
+    display: none;
+  }
+  .close{
+    margin-top: 65vh;
+    margin-left: 40%;
+  }
+
+
+
+  @media screen and (max-width:992px ) {
+    body{
+        width: 100vw;
+}
+nav.active{
+    padding-top: 30vh;
+}
+.container{
+    width: 85%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+   margin-top: 6vh;
+   
+
+}
+.left-content{
+   width: 100%;
+   height: 25vh;
+   color: #000;
+   grid-row: 1;
+   align-items: center;
+   align-content: center;
+   position: relative;
+   display: flex;
+   padding-top: 50px;
+   background: none;
+}
+
+.left-content p{
+    margin-top: 0;
+    position: absolute;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.right-content img{
+    border-radius: 30px;
+
+}
+
+.right-content{
+    width: 100%;
+    height: 50vh;
+    grid-row: 2;
+}
+
+.btnc{
+    width: 100%;
+    height: 5vh;
+    background-color: transparent;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+.marathon{
+    font-size: 55px;
+    position: absolute;
+    color: #111;
+    top: 0;
+
+  }
+  .insc{
+    position: absolute;
+
+    margin-left: 40%;
+    margin-top: 20px;
+   }
+
+  .signup_body{
+    width: 105vw;
+    height: 130vh;
+}
+.signup_form{
+    padding-left: 30px;
+}
+  
+.navbar ul {
+    display: none;
+}
+.nav-toggle{
+    display: block;
+}
+
+nav.active{
+    transform: translateX(0px);
+    display: block;
+}
+  }
+
+  @media  screen and (max-width: 760px) {
+     .signup_body{
+        width: 100%;
+        display: grid;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    
+    } 
+
+    body{
+        width: 100vw;
+        
+    }
+    .signup_form{
+        width:100%;
+        margin-left: -10px;
+    }
+
+.marathon{
+    font-size: 30px;
+   margin-left: -10px; 
+}
+
+.left-content{
+    height: 15vh;
+}
+.left-content p{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: -5px;
+}
+
+.right-content{
+    height: 28vh;
+}
+
+.container{
+    position: absolute;
+    top: 0;
+   
+}
+
+  }
+
